@@ -1,3 +1,4 @@
+/*v1*/
 const lots =[
     {
         image : 'tresor1.png',
