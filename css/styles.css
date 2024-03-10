@@ -1,0 +1,237 @@
+body {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(9, 0, 134));
+ 
+}
+.popup{
+    position: fixed;
+    display : none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 3;
+    color : white;
+}
+.popup.show {
+    display: flex;
+}
+.image{
+    width: 100px;
+    height: 100px;
+}
+
+.bouton{
+    background-image:url("images/bouton.png");
+    width: 200px;
+    height: 60px;
+    
+}
+
+.jeu {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.lot{
+    display:flex;
+    justify-content: center;
+    position:relative;
+    height: 100px;
+    width: 2120px;
+    
+}
+.lotimg {
+    position:relative;
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+    overflow: visible;
+    
+}
+.lotimg:after {
+    display: block;
+    content:'';
+    width: 30px;
+    height: 100px;
+    background: url(../images/ecart.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top:0;
+    right: -30px;
+}
+.lotimg:last-child{
+    margin-right: 0;
+}
+.lotimg:last-child::after{
+   display: none; 
+}
+.reduite{
+    display:none;
+    width: 30px;
+    height: 100px;
+
+
+}
+.cadre{
+    position: relative;
+    width: 50px;
+    height: 270px;
+  /**  border: solid red; **/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.selection_haut{
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 50px;
+    height: 100px;
+    z-index: 2;
+}
+.selection_bas{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 50px;
+    height: 100px;
+    z-index: 2;
+}
+.banderole{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: black;
+    height: 200px;
+    width: 2150px;
+  /*  border: solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+   
+}
+.banderole a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    height: 250px;
+    width: 200px;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+  /*  border: solid red; */
+}
+.selection{
+    position: fixed;
+    inset: 0;
+ /*   border: solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    left:0;
+    right:0;
+}
+.roues{
+    position: relative;
+    height: 300px;
+    width : 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    left:0;
+    right:0;
+   
+}
+
+.carte{
+    width: 250px;
+    height: 250px;
+    
+
+}
+.images_carte{
+    width: 100px;
+    height: 100px;
+}
+.or{
+    width: 200px;
+    height: 250px;
+    margin-right: 100px;
+}
+.selection_haut_carte{
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 50px;
+    height: 100px;
+    z-index: 2;
+}
+.selection_bas_carte{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 50px;
+    height: 100px;
+    z-index: 2;
+}
+.cadre_carte{
+    position: relative;
+    width: 50px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.lot_carte {
+    position:relative;
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+    overflow: visible;
+    
+}
+.lot_carte:after {
+    display: block;
+    content:'';
+    width: 30px;
+    height: 100px;
+    background: url(../images/ecart_carte.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top:0;
+    right: -30px;
+}
+.lot_carte:last-child{
+    margin-right: 0;
+}
+.lot_carte:last-child::after{
+   display: none; 
+}
+.popup_carte{
+    position: fixed;
+    display : none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 3;
+    color : white;
+}
+.popup_carte.show {
+    display: flex;
+}
